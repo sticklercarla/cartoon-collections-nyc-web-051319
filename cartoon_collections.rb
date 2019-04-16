@@ -17,7 +17,10 @@ new_calls
 end
 
 def long_planeteer_calls(calls)
-  if calls.select
+  if calls.select {|word| word.length > 4}
+    true 
+  else
+    false
 end
 
 def find_the_cheese# code an argument here
