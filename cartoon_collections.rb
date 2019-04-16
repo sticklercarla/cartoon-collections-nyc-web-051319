@@ -22,11 +22,12 @@ def long_planeteer_calls(calls)
   end
 end
 
-def find_the_cheese(food)
+def find_the_cheese(items)
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
-  food.find do |cheese|
-    cheese.include?(cheese_types.join(' '))
+  cheeses = []
+  items.find do |cheese|
+    cheeses.push(cheese.include?(cheese_types.join(' ')))
   end
-  food
+  cheeses
 end
