@@ -28,4 +28,5 @@ def find_the_cheese(food)
   food.find do |cheese|
     cheese.include?(cheese_types.join(' '))
   end
+  food
 end
