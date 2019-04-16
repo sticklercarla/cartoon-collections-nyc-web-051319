@@ -19,7 +19,7 @@ end
 def long_planeteer_calls(calls)
   if calls.select {|word| word.length > 4}
     true 
-  elsif calls.select {|word| word.length < 4}
+  else
     false
   end
 end
